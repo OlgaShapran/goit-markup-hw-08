@@ -1,0 +1,12 @@
+.logo--black>span {
+    color: var(--accent-txt-cl);
+}
+
+.logo--black {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--studio-txt-cl);
+}

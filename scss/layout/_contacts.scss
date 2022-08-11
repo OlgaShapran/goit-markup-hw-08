@@ -1,0 +1,36 @@
+.contacts {
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__mail {
+    margin-right: 50px;
+}
+
+/* сделать ласт чайлд */
+.contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--anim);
+    color: var(--tel-txt-cl);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+}
+
+
+
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

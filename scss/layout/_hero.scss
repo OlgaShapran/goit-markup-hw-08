@@ -1,0 +1,49 @@
+.hero {
+    background-color: var(--dark-bg-cl);
+    text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
+
+    background-size: cover;
+    border: 1px solid var(--studio-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__container {
+    max-width: 1600px;
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    max-width: none;
+    min-width: 200px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--anim), background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--btn-txt-cl);
+        background-color: var(--btn-bl-cl);
+    }
+}
+
+
