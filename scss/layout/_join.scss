@@ -1,5 +1,15 @@
 .join__footer {
     margin-right: auto;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+            width: 102px;
+        }
+    
+    
+        @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+        }
 }
 
 .join__text {
