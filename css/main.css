@@ -384,10 +384,16 @@ address {
 .logo--black {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--studio-txt-cl);
+}
+@media screen and (min-width: 1200px) {
+  .logo--black {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .nav {
@@ -446,28 +452,43 @@ address {
   content: "";
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.contacts__mail {
-  margin-right: 50px;
+.contacts__list {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__mail {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__mail {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 /* сделать ласт чайлд */
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,11 +496,17 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
   color: var(--tel-txt-cl);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-txt-cl);
@@ -519,7 +546,7 @@ address {
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: calc 1.6153846154;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
@@ -852,6 +879,11 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__adress {
+    margin-right: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__adress {
     margin-right: 70px;
@@ -930,11 +962,6 @@ address {
   margin-right: auto;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .join__footer {
-    width: 102px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .join__footer {
     margin-bottom: 0px;
@@ -991,11 +1018,6 @@ address {
 .join__footer {
   margin-right: auto;
   margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .join__footer {
-    width: 102px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .join__footer {
@@ -1190,20 +1212,6 @@ address {
   color: var(--tel-txt-cl);
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 12px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe__form {
     display: -webkit-box;
@@ -1237,7 +1245,7 @@ address {
 .subscribe__email {
   display: block;
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding: 15px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1247,6 +1255,18 @@ address {
   background-color: transparent;
   color: var(--btn-txt-cl);
   outline: transparent;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__btn {
