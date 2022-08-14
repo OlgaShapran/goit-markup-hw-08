@@ -3,6 +3,11 @@
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc(100% - 30px * 2) / 3;
+
+        @media screen and (max-width: 769px) {
+                flex-direction: column;
+
+            }
 }
 
 .project__item:hover .project__overlay {

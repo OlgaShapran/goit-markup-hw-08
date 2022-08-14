@@ -5,13 +5,11 @@
 .team__list {
 
     border-radius: 0px 0px 4px 4px;
-    @media screen and (max-width: 479px) {
-            margin-bottom: 30px;
-    
-            &:last-child {
-                margin-bottom: 0;
+    @media screen and (max-width: 769px) {
+            display: flex;
+            flex-direction: column;
+                gap: 30px;
             }
-        }
 
     @media screen and (min-width: 768px) {
     display: flex;
