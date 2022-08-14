@@ -360,7 +360,12 @@ address {
   fill: var(--accent-txt-cl);
 }
 
-.menu-btn {
+.menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  margin-left: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -372,14 +377,27 @@ address {
           justify-content: center;
   width: 40px;
   height: 40px;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: var(--main-txt-cl);
 }
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  .menu__btn {
     display: none;
   }
+}
+.menu-overlay .menu__btn {
+  position: absolute;
+}
+
+.menu__btn--hover {
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
+}
+.menu__btn--hover:focus, .menu__btn--hover:hover {
+  fill: var(--accent-txt-cl);
 }
 
 .menu {
@@ -400,6 +418,21 @@ address {
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   background-color: var(--white-txt-cl);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--anim);
+  transition: -webkit-transform var(--anim);
+  transition: transform var(--anim);
+  transition: transform var(--anim), -webkit-transform var(--anim);
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.menu-overlay.is-open .menu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu__list:first-child {
@@ -411,7 +444,7 @@ address {
 }
 
 .menu__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .menu__link {
@@ -424,6 +457,10 @@ address {
 }
 
 .menu__link--current {
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
+}
+.menu__link--current:hover, .menu__link--current:focus {
   color: var(--accent-txt-cl);
 }
 
