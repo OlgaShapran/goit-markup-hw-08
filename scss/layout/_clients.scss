@@ -1,7 +1,21 @@
 .clients__list {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+
+
+@media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+            }
+            
+
 }
 
 .clients__link {
