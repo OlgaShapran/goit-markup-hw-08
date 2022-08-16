@@ -186,9 +186,17 @@
           <h2 class="container__tittle">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
+              <!-- картинки -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\work\img-1@1x_lg.jpg 1x, ./images\work\img-1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+              </picture>
               <img
                 class="work__image"
-                src="./images/working-1.jpg"
+                src="./images\work\img-1@1x_lg.jpg"
                 alt="Десктопні додатки"
                 width="370"
                 height="294"
@@ -196,9 +204,16 @@
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\work\img-2@1x_lg.jpg 1x, ./images\work\img-2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+              </picture>
               <img
                 class="work__image"
-                src="./images/working-2.jpg"
+                src="./images\work\img-2@1x_lg.jpg"
                 alt="Мобільні додатки"
                 width="370"
                 height="294"
@@ -206,9 +221,16 @@
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\work\img-3@1x_lg.jpg 1x, ./images\work\img-3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+              </picture>
               <img
                 class="work__image"
-                src="./images/working-3.jpg"
+                src="./images\work\img-3@1x_lg.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
                 height="294"
@@ -224,14 +246,31 @@
           <h2 class="container__tittle">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                srcset="./images/team/img-1@1x_sm.jpg 1x, ./images/team/img-1@2x_sm.jpg 2x"
-                class="team__foto"
-                src="./images/team/img-1@1x_sm.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\team\img-1@1x_lg.jpg 1x, /images\team\img-1@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\team\img-1@1x_md.jpg 1x, /images\team\img-1@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\team\img-1@1x_sm.jpg 1x, /images\team\img-1@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__foto"
+                  src="./images\team\img-1@1x_lg.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Игор Дем'яненко</h3>
                 <p class="team__spec">Product Designer</p>
@@ -292,13 +331,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-2.jpg"
-                alt="Ольга Репина"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\team\img-2@1x_lg.jpg 1x, /images\team\img-2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\team\img-2@1x_md.jpg 1x, /images\team\img-2@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\team\img-2@1x_sm.jpg 1x, /images\team\img-2@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__foto"
+                  src="./images\team\img-2@1x_lg.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репіна</h3>
                 <p class="team__spec">Frontend Developer</p>
@@ -359,13 +416,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-3.jpg"
-                alt="Николай Тарасов"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\team\img-3@1x_lg.jpg 1x, /images\team\img-3@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\team\img-3@1x_md.jpg 1x, /images\team\img-3@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\team\img-3@1x_sm.jpg 1x, /images\team\img-3@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__foto"
+                  src="./images\team\img-3@1x_lg.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__spec">Marketing</p>
@@ -426,13 +500,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-4.jpg"
-                alt="Михаил Ермаков"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\team\img-4@1x_lg.jpg 1x, /images\team\img-4@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\team\img-4@1x_md.jpg 1x, /images\team\img-4@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\team\img-4@1x_sm.jpg 1x, /images\team\img-4@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__foto"
+                  src="./images\team\img-4@1x_lg.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михаїл Єрмаков</h3>
                 <p class="team__spec">UI Designer</p>

@@ -71,6 +71,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 address {
@@ -439,10 +443,6 @@ address {
   margin-bottom: auto;
 }
 
-.menu__item {
-  margin-bottom: 35.71px;
-}
-
 .menu__item:last-child {
   margin-bottom: 0px;
 }
@@ -465,10 +465,6 @@ address {
 }
 
 .menu__phone-link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
-  letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
 }
 
