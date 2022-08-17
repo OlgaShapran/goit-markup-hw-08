@@ -5,7 +5,7 @@
 .team__list {
 display: flex;
 flex-wrap: wrap;
-gap: var(--indent);
+gap: 30px;
 
     border-radius: 0px 0px 4px 4px;
 
@@ -14,7 +14,7 @@ gap: var(--indent);
             }
 
     @media screen and (min-width: 768px) {
---items:2
+flex-basis: calc((100% - 30px * (2 - 1)) / 2);;
             }
         
         @media screen and (min-width: 1200px) {
