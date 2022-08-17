@@ -818,19 +818,13 @@ address {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .features__list {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -883,10 +877,11 @@ address {
   text-transform: uppercase;
   color: var(--main-txt-cl);
   margin-bottom: 10px;
+  text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .features__subject {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -896,6 +891,7 @@ address {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--tel-txt-cl);
+  text-align: left;
 }
 
 .work__container {
@@ -1538,6 +1534,12 @@ address {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--tel-txt-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) {
