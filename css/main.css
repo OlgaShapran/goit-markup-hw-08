@@ -1149,11 +1149,6 @@ address {
   padding-bottom: 60px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer__container {
-    text-align: left;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__container {
     text-align: left;
@@ -1180,6 +1175,13 @@ address {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__position {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
