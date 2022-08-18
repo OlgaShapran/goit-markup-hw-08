@@ -159,11 +159,16 @@ address {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form__tittle {
+    line-height: 1.15;
+  }
 }
 
 .form__group {
@@ -264,8 +269,8 @@ address {
 .form__checkbox-label {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--tel-txt-cl);
   -webkit-user-select: none;
@@ -276,6 +281,12 @@ address {
 }
 .form__checkbox-label--conditions {
   color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 1200px) {
+  .form__checkbox-label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .form__btn {
@@ -319,21 +330,24 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
           transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 528px;
-  min-height: 524px;
+  width: 450px;
+  min-height: 609px;
   background-color: var(--btn-txt-cl);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 39px;
-  padding-right: 41px;
+  padding: 40px;
   opacity: 1;
   -webkit-transition: opacity var(--anim), -webkit-transform var(--anim);
   transition: opacity var(--anim), -webkit-transform var(--anim);
   transition: transform var(--anim), opacity var(--anim);
   transition: transform var(--anim), opacity var(--anim), -webkit-transform var(--anim);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.backdrop--is-hidden .backdrop__modal {
