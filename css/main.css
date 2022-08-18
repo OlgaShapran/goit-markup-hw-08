@@ -793,6 +793,7 @@ address {
 
 .hero__container {
   max-width: 1600px;
+  max-height: 600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -1159,24 +1160,26 @@ address {
   }
 }
 
+.footer__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .footer__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1260,12 +1263,12 @@ address {
 }
 
 .join__footer {
-  margin-right: auto;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .join__footer {
     margin-bottom: 0px;
+    margin-right: auto;
   }
 }
 
@@ -1317,12 +1320,12 @@ address {
 }
 
 .join__footer {
-  margin-right: auto;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .join__footer {
     margin-bottom: 0px;
+    margin-right: auto;
   }
 }
 

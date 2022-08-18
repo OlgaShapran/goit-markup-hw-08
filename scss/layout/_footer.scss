@@ -8,7 +8,7 @@
     text-align: center;
 
     @media screen and (min-width: 768px) {
-text-align: left;
+// text-align: left;
         }
 
         @media screen and (min-width: 1200px) {
@@ -17,15 +17,20 @@ text-align: left;
 }
 
 .footer__position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
     @media screen and (min-width: 768px) {
-    display: flex;
-        align-items: baseline;
+flex-direction: row;
+flex-wrap: wrap;
+        // align-items: baseline;
         }
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
     
-        @media screen and (min-width: 1200px) {
-    display: flex;
-        align-items: baseline;
-        }
+
 }
 
 .footer__adress {
