@@ -9,6 +9,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
+    overflow-y: scroll;
     transition: opacity var(--anim), visibility var(--anim);
 }
 
@@ -22,7 +23,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+    transform: translate(-50%, -40%) scale(1) rotate(0);
 
     width: 450px;
     min-height: 609px;
@@ -33,6 +34,11 @@
 
     opacity: 1;
     transition: transform var(--anim), opacity var(--anim);
+
+@media screen and (min-width: 768px) {
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    }
+
 
         @media screen and (min-width: 1200px) {
     width: 528px;

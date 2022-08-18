@@ -6,7 +6,8 @@
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         justify-content: left;
-        max-width: 349px;
+        row-gap: 15px;
+        // max-width: 349px;
         }
 }
 
