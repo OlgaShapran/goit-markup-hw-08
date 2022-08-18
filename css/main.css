@@ -675,7 +675,7 @@ address {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-txt-cl);
-  content: "";
+  content: " ";
 }
 
 @media screen and (max-width: 767px) {
