@@ -512,8 +512,6 @@ address {
 .menu__link--current {
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
-}
-.menu__link--current:hover, .menu__link--current:focus {
   color: var(--accent-txt-cl);
 }
 
