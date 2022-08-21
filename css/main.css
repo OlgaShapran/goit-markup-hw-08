@@ -73,7 +73,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -662,12 +662,15 @@ address {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-txt-cl);
 }
+
 .nav__link--current {
   position: relative;
   color: var(--accent-txt-cl);
 }
-.nav__link--current--current::after {
+
+.nav__link--current::after {
   position: absolute;
+  z-index: 200;
   bottom: 0;
   left: 0;
   display: block;
