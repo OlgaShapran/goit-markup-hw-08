@@ -40,7 +40,7 @@
     
 .nav__link--current::after {
                 position: absolute;
-                z-index: 200;
+                z-index: 100;
                 bottom: 0;
                 left: 0;
                 display: block;
