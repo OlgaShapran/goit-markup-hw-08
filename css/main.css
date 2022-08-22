@@ -73,7 +73,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1124,13 +1124,23 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--soc-cl);
   color: var(--soc-cl);
   border-radius: 4px;
   -webkit-transition: color var(--anim), border var(--anim);
   transition: color var(--anim), border var(--anim);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:focus, .clients__link:hover, .clients__link:active {
   color: var(--accent-txt-cl);
@@ -1176,6 +1186,9 @@ address {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1560,16 +1573,6 @@ address {
   border: 1px solid var(--line-cl);
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
-}
-@media screen and (min-width: 768px) {
-  .project__content {
-    padding-bottom: 56px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project__content {
-    padding-bottom: 20px;
-  }
 }
 .project__content:hover, .project__content:focus {
   color: currentColor;

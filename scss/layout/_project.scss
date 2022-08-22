@@ -87,14 +87,6 @@ padding-left: 24px;
   border: 1px solid var(--line-cl);
   transition: color var(--anim);
 
-@media screen and (min-width: 768px) {
-        padding-bottom: 56px;
-    }
-
-        @media screen and (min-width: 1200px) {
-            padding-bottom: 20px;
-        }
-
   &:hover,
   &:focus {
     color: currentColor;
